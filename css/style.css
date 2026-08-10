@@ -15469,10 +15469,14 @@ body.dark-mode .login-register-link a:hover {
 .auth-rtl-toggle{
     position:static;
 }
+body.dark-mode .register-container {
+    background: transparent;
+}
 
-body.rtl-mode .login-section,
+
 body.rtl-mode .register-section{
     text-align:right;
+    
 }
 
 body.rtl-mode .input-group input{
