@@ -2,7 +2,8 @@
     GOOGLE FONT
 ======================================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
 
 /*=====================================
     ROOT
@@ -365,6 +366,9 @@ img{
     transition:.3s;
 
     height:44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -2865,31 +2869,23 @@ img{
     min-width:220px;
 
     text-align:center;
+    
 
 }
 
-.cta-buttons .secondary-btn{
-
-    min-width:220px;
-
-    text-align:center;
-
-    border:2px solid #fff;
-
-    color:#fff;
-
-    background:transparent;
-
+.cta .cta-buttons .secondary-btn {
+    min-width: 220px;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+    background: var(--white);
+    color: var(--primary-color);
 }
 
-.cta-buttons .secondary-btn:hover{
-
-    background:#fff;
-
-    color:var(--primary-color);
-
+.cta .cta-buttons .secondary-btn:hover {
+    background: var(--primary-hover);
+    border-color: var(--primary-hover);
+    color: #fff;
 }
-
 /*=====================================
     OPTIONAL PARALLAX EFFECT
 ======================================*/
@@ -3466,6 +3462,10 @@ img{
 
     align-items: center;
 
+    column-gap: 20px;
+    row-gap: 18px;
+    margin-top: 24px;
+
 }
 
 .about-two-feature{
@@ -3476,11 +3476,7 @@ img{
 
     gap:12px;
 
-    transition:.3s;
-    list-style:none;
-    padding:0;
-    margin:30px auto;
-    width:fit-content;   
+    margin: 0;
 
 }
 
@@ -5883,7 +5879,7 @@ img{
 
     position:absolute;
 
-    left:30px;
+    left:60px;
 
     top:0;
 
@@ -8129,21 +8125,15 @@ img{
 
 .booking-content span{
 
-    display:inline-block;
-
-    padding:8px 18px;
-
-    background:rgba(180,129,70,.12);
-
-    color:var(--primary-color);
-
-    border-radius:30px;
-
-    font-size:14px;
-
-    font-weight:600;
-
-    margin-bottom:20px;
+    display: flex;
+    align-items: center;
+    min-height: 52px;
+    padding: 0 24px;
+    background: #F4EBDF;
+    border-radius: 999px;
+    color: var(--primary-color);
+    font-weight: 600;
+    width: 100%;
 
 }
 
@@ -8183,7 +8173,7 @@ img{
 
     grid-template-columns:repeat(2,1fr);
 
-    gap:18px 25px;
+    gap:20px 40px;
 
     margin-bottom:40px;
 
@@ -8195,7 +8185,7 @@ img{
 
     align-items:center;
 
-    gap:12px;
+    gap:14px;
 
     font-size:16px;
 
@@ -8207,11 +8197,16 @@ img{
 
 .booking-item i{
 
-    color:var(--primary-color);
-
-    font-size:20px;
-
-    flex-shrink:0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
 
 }
 
@@ -8550,13 +8545,17 @@ img{
 
     text-decoration:none;
 
+    border: 2px solid transparent;
+
 }
 
-.package-btn:hover{
+.catering-packages .package-btn:hover{
 
-    background:var(--secondary-color);
+    background:var(--white);
 
     transform:translateY(-3px);
+
+    border-color: var(--primary-color);
 
 }
 
@@ -11031,6 +11030,8 @@ img{
 
     margin-bottom:80px;
 
+     padding: 50px 48px;
+
 }
 
 .gallery-highlight-card:last-child{
@@ -12865,8 +12866,9 @@ img{
     max-width:460px;
     background:#fff;
     border-radius:28px;
-    padding:15px 25px 35px;
+    padding:30px 35px 40px;
     box-shadow:0 20px 50px rgba(0,0,0,.10);
+    text-align: center;
 }
 .login-page{
 
@@ -12922,17 +12924,21 @@ img{
 
     width:100%;
 
-     margin:0 auto 15px;   
+    margin:0 auto 15px;   
+
+    margin-bottom: 24px;
 }
 .login-logo img{
 
-    width:220px;
+    width:180px;
 
     margin-bottom:25px;
 
      height:auto;
 
     display:block;
+
+    margin: 0 auto;
 
 }
 
@@ -12944,7 +12950,10 @@ img{
 
     color:var(--black);
 
-    margin-bottom:12px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    margin: 0 0 10px;
+    white-space: nowrap;
 
 }
 
@@ -12955,6 +12964,9 @@ img{
     font-size:16px;
 
     margin-bottom:35px;
+
+     margin: 0 0 24px;
+
 
 }
 
@@ -13385,216 +13397,163 @@ img{
 
 
 /*****quote page*****/
-/*=====================================
-    GET A QUOTE BANNER
-======================================*/
+/* =========================
+   Quote page header
+========================= */
 
-.quote-banner{
-    position:relative;
-    background:url("../images/quote-banner.jpg") center center/cover no-repeat;
-    padding:180px 0 120px;
-    overflow:hidden;
+.quote-header {
+    background: #ffffff;
+    border-bottom: 1px solid #E8E2D8;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.quote-banner .banner-overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.60);
+.quote-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.quote-banner .banner-content{
-    position:relative;
-    z-index:2;
-    max-width:760px;
-    margin:0 auto;
-    text-align:center;
-    color:#fff;
+.quote-logo img {
+    height: 70px;
+    width: auto;
+    display: block;
 }
 
-.quote-banner .banner-subtitle{
-    display:inline-block;
-    padding:10px 22px;
-    background:rgba(255,255,255,.12);
-    border:1px solid rgba(255,255,255,.25);
-    border-radius:50px;
-    backdrop-filter:blur(8px);
-    color:var(--secondary-color);
-    font-size:15px;
-    font-weight:600;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    margin-bottom:22px;
+.quote-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
-.quote-banner h1{
-    font-family:"Playfair Display", serif;
-    font-size:64px;
-    line-height:1.2;
-    margin-bottom:20px;
-    color:#fff;
+.quote-header-actions button {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid #E8E2D8;
+    background: #fff;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .3s ease;
 }
 
-.quote-banner p{
-    font-size:18px;
-    line-height:1.9;
-    color:rgba(255,255,255,.92);
-    margin-bottom:35px;
+.quote-header-actions button:hover {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
 }
 
-.banner-breadcrumb{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
-    font-size:15px;
+/* RTL */
+html[dir='rtl'] .quote-header .container {
+    flex-direction: row-reverse;
+}
+.quote-page{
+    min-height:100vh;
+    padding:60px 20px;
+    background:#FFF8F0;
 }
 
-.banner-breadcrumb a{
-    color:#fff;
-    transition:.3s ease;
-}
-
-.banner-breadcrumb a:hover{
-    color:var(--secondary-color);
-}
-
-.banner-breadcrumb span{
-    color:rgba(255,255,255,.80);
-}
-
-/*=====================================
-    QUOTE REQUEST FORM
-======================================*/
-
-.quote-form-section{
-    padding:120px 0;
-    background:#ffffff;
-}
-
-.quote-wrapper{
-    display:grid;
-    grid-template-columns:1fr 1.1fr;
-    gap:60px;
-    align-items:start;
-}
-
-.quote-info h2{
-    font-family:"Playfair Display", serif;
-    font-size:48px;
-    color:var(--black);
-    line-height:1.3;
-    margin:20px 0;
-}
-
-.quote-info p{
-    color:var(--text);
-    font-size:17px;
-    line-height:1.9;
-    margin-bottom:35px;
-}
-
-.quote-features{
-    display:flex;
-    flex-direction:column;
-    gap:18px;
-}
-
-.quote-feature{
-    display:flex;
-    align-items:flex-start;
-    gap:12px;
-}
-
-.quote-feature i{
-    color:var(--secondary-color);
-    font-size:18px;
-    margin-top:4px;
-}
-
-.quote-feature span{
-    color:var(--black);
-    font-weight:500;
-}
-
-/* Form Box */
-
-.quote-form-box{
+.quote-card{
+    max-width:980px;
+    margin:auto;
     background:#fff;
-    border-radius:24px;
-    padding:40px;
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-    border:1px solid #f2f2f2;
+    border-radius:32px;
+    padding:48px;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
 }
 
-.quote-form{
+.quote-top{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    margin-bottom:40px;
+}
+
+.quote-top img{
+    width:80px;
+}
+
+.quote-top h2{
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    color:#1F2937;
+    margin-bottom:8px;
+}
+
+.quote-top p{
+    color:#64748B;
+    line-height:1.7;
+}
+
+.quote-form-modern{
     display:flex;
     flex-direction:column;
-    gap:22px;
+    gap:24px;
 }
 
-.form-grid{
+.input-row{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:1fr 1fr;
     gap:20px;
 }
 
-.form-group{
+.input-group{
     display:flex;
     flex-direction:column;
 }
 
-.form-group label{
-    font-size:15px;
+.input-group label{
     font-weight:600;
-    color:var(--black);
+    color:#334155;
     margin-bottom:10px;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea{
+.input-group input,
+.input-group select,
+.input-group textarea{
     width:100%;
-    padding:15px 18px;
-    border:2px solid #e8e8e8;
-    border-radius:14px;
+    padding:16px 18px;
+    border:1px solid #E8DCC8;
+    border-radius:16px;
+    background:#FFFCF8;
     font-size:15px;
-    color:var(--black);
-    background:#fff;
+    color:#1F2937;
+    transition:.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+    border-color:#0F766E;
+    box-shadow:0 0 0 4px rgba(15,118,110,.08);
     outline:none;
-    transition:.3s ease;
-    font-family:"Poppins", sans-serif;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-    border-color:var(--secondary-color);
-    box-shadow:0 0 0 4px rgba(212,175,55,.12);
-}
-
-.form-group textarea{
-    resize:vertical;
-    min-height:150px;
-}
-
-.quote-submit-btn{
+.quote-btn-modern{
+    margin-top:10px;
     width:100%;
-    padding:16px;
+    padding:18px;
     border:none;
-    border-radius:999px;
-    background:var(--primary-color);
+    border-radius:18px;
+    background:#0F766E;
     color:#fff;
-    font-size:16px;
+    font-size:17px;
     font-weight:600;
     cursor:pointer;
-    transition:.3s ease;
+    transition:.3s;
 }
 
-.quote-submit-btn:hover{
-    background:#7a3f12;
+.quote-btn-modern:hover{
+    background:#115E59;
     transform:translateY(-2px);
 }
-
 
 
 
@@ -13784,6 +13743,11 @@ body.dark-mode .secondary-btn{
     color:#f8fafc;
 }
 
+body.dark-mode .primary-btn{
+    border:1px solid #475569;
+    color:#f8fafc;
+}
+
 /* Footer */
 
 body.dark-mode .footer{
@@ -13842,7 +13806,7 @@ body.dark-mode .value-card,
 body.dark-mode .about-testimonial-card,
 body.dark-mode .about-two-highlight{
     background:#171a22;
-    border:1px solid #2a2f3a;
+    border:0px solid #2a2f3a;
     box-shadow:none;
 }
 
@@ -14296,6 +14260,31 @@ body.dark-mode .catering-packages .section-title p{
 body.dark-mode .catering-packages .section-title span{
     color:var(--text);
 }
+
+/* Booking section dark mode */
+body.dark-mode .booking-content span {
+    color: #7DD3C7; /* subtitle */
+     background: #1F2937;
+}
+
+body.dark-mode .booking-content h2 {
+    color: #F8FAFC;
+}
+
+body.dark-mode .booking-content p {
+    color: #CBD5E1;
+}
+
+body.dark-mode .booking-item span {
+    background: #1F2937;
+    color: #F8FAFC; /* make text visible */
+    border: 1px solid rgba(15,118,110,0.25);
+}
+
+body.dark-mode .booking-item i {
+    background: var(--primary-color);
+    color: #fff;
+}
 /*=====================================
     SERVICES FAQ - DARK MODE
 =====================================*/
@@ -14303,7 +14292,7 @@ body.dark-mode .catering-packages .section-title span{
 body.dark-mode .services-faq-question{
     background:#111827 !important;
     color:#ffffff !important;
-    border:1px solid rgba(255,255,255,.08);
+   
 }
 
 body.dark-mode .services-faq-question span{
@@ -14316,7 +14305,7 @@ body.dark-mode .services-faq-question i{
 
 body.dark-mode .services-faq-answer{
     background:#0f172a !important;
-    border:1px solid rgba(255,255,255,.06);
+ 
 }
 
 body.dark-mode .services-faq-answer p{
@@ -15243,6 +15232,123 @@ body.dark-mode .theme-toggle{
 body.dark-mode .theme-toggle i{
     color: #fff ;
 }
+
+/* RTL mode - add space between buttons and navigation */
+html[dir='rtl'] .header-actions {
+    margin-left: 24px;
+}
+
+/* Or if the buttons are in a separate group */
+html[dir='rtl'] .header-buttons {
+    margin-left: 24px;
+}
+html[dir='rtl'] .nav-menu > li:first-child {
+    margin-right: -10px;
+
+}
+/* Hero section RTL */
+html[dir='rtl'] .hero-content {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    align-items: flex-end;
+}
+
+html[dir='rtl'] .hero-content .hero-btn {
+    justify-content: flex-end;
+}
+
+html[dir='rtl'] .hero-content p,
+html[dir='rtl'] .hero-content h1,
+html[dir='rtl'] .hero-content .hero-subtitle {
+    text-align: right;
+}
+
+/* RTL - move package badge to left */
+html[dir='rtl'] .home-package-card {
+    position: relative;
+}
+
+html[dir='rtl'] .home-package-badge {
+    left: 24px;
+    right: auto;
+}
+
+/* Keep the icon aligned properly */
+html[dir='rtl'] .home-package-icon {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Right-align text and list */
+html[dir='rtl'] .home-package-card h3,
+html[dir='rtl'] .home-package-card ul,
+html[dir='rtl'] .home-package-card li {
+    text-align: right;
+}
+
+html[dir='rtl'] .home-package-card li {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+/* =========================
+   Journey timeline RTL
+========================= */
+
+html[dir='rtl'] .journey-timeline::before {
+    right: 36px;
+    left: auto;
+}
+
+html[dir='rtl'] .journey-item {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+html[dir='rtl'] .journey-year {
+    margin-left: 24px;
+    margin-right: 0;
+    position: relative;
+    z-index: 2;
+}
+
+html[dir='rtl'] .journey-content {
+    margin-right: 20px;
+    margin-left: 0;
+    text-align: right;
+}
+
+html[dir='rtl'] .journey-content h3,
+html[dir='rtl'] .journey-content p {
+    text-align: right;
+}
+/* RTL - gallery highlight content */
+html[dir='rtl'] .gallery-highlight-content {
+    text-align: right;
+}
+
+html[dir='rtl'] .gallery-highlight-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 0;
+}
+
+html[dir='rtl'] .gallery-highlight-content li {
+    display: flex;
+    flex-direction: row-reverse;   /* icon on the right */
+    align-items: center;
+    justify-content: flex-start;   /* keep items under the paragraph */
+    gap: 10px;
+    margin-bottom: 16px;
+    width: 100%;
+    text-align: right;
+}
+
+html[dir='rtl'] .gallery-highlight-content li i {
+    color: var(--secondary-color);
+    flex-shrink: 0;
+}
 /* ================================
    Login page - dark mode
 ================================ */
@@ -15464,6 +15570,22 @@ body.dark-mode .register-divider span{
     color:#94a3b8;
 }
 
+/* Apple icon white in dark mode */
+body.dark-mode .apple-btn i {
+    color: #ffffff !important;
+}
+
+/* Optional: keep the button dark with a light border */
+body.dark-mode .apple-btn {
+    background: #111827;
+    border: 1px solid #2A3F5A;
+}
+
+body.dark-mode .apple-btn:hover {
+    background: #1F2937;
+    border-color: #D4AF37;
+}
+
 /* =========================
    CTA SECTION - DARK MODE
 ========================= */
@@ -15639,3 +15761,125 @@ body.dark-mode .cta-wrapper:hover {
     box-shadow: 0 25px 70px rgba(0,0,0,.45);
 }
 
+/* =========================
+   Quote page dark mode
+========================= */
+
+body.dark-mode .quote-page{
+    background:#020817;
+}
+
+body.dark-mode .quote-card{
+    background:#111827;
+    border:1px solid #243244;
+    box-shadow:none;
+}
+
+body.dark-mode .quote-top h2{
+    color:#F8FAFC;
+}
+
+body.dark-mode .quote-top p{
+    color:#CBD5E1;
+}
+
+body.dark-mode .input-group label{
+    color:#E2E8F0;
+}
+
+body.dark-mode .input-group input,
+body.dark-mode .input-group select,
+body.dark-mode .input-group textarea{
+    background:#0F172A;
+    border:1px solid #2A3F5A;
+    color:#F8FAFC;
+}
+
+body.dark-mode .input-group input::placeholder,
+body.dark-mode .input-group textarea::placeholder{
+    color:#94A3B8;
+}
+
+body.dark-mode .input-group select{
+    color:#F8FAFC;
+}
+
+body.dark-mode .input-group input:focus,
+body.dark-mode .input-group select:focus,
+body.dark-mode .input-group textarea:focus{
+    border-color:#0F766E;
+    box-shadow:0 0 0 4px rgba(15,118,110,.15);
+}
+
+body.dark-mode .quote-btn-modern{
+    background:#0F766E;
+    color:#fff;
+}
+
+body.dark-mode .quote-btn-modern:hover{
+    background:#14B8A6;
+    transform:translateY(-2px);
+}
+
+body.dark-mode .quote-top{
+    border-bottom:1px solid #243244;
+    padding-bottom:24px;
+    margin-bottom:36px;
+}
+
+/* Optional gold accent */
+body.dark-mode .quote-top h2::after{
+    content:'';
+    display:block;
+    width:80px;
+    height:3px;
+    background:#D4AF37;
+    margin-top:14px;
+    border-radius:2px;
+}
+
+html[dir='rtl'] body.dark-mode .quote-top h2::after{
+    margin-left:auto;
+    margin-right:0;
+}
+
+@media (max-width:768px){
+    body.dark-mode .quote-top{
+        padding-bottom:20px;
+        margin-bottom:28px;
+    }
+
+    body.dark-mode .quote-top h2::after{
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+/* =========================
+   Quote header dark mode
+========================= */
+
+body.dark-mode .quote-header{
+    background:#020817;
+    border-bottom:1px solid #243244;
+}
+
+body.dark-mode .quote-header .container{
+    background:transparent;
+}
+
+body.dark-mode .quote-logo img{
+    filter:brightness(1.05);
+}
+
+body.dark-mode .quote-header-actions button{
+    background:#111827;
+    border:1px solid #2A3F5A;
+    color:#F8FAFC;
+}
+
+body.dark-mode .quote-header-actions button:hover{
+    background:#0F766E;
+    border-color:#0F766E;
+    color:#ffffff;
+}
