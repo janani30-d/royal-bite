@@ -34,550 +34,103 @@
 <body>
     <!--==================== HEADER START ====================-->
 
-<header class="header">
-
-    <div class="container">
-
-        <!--========== Logo ==========-->
-
-        <a href="index.html" class="logo">
-
-            <img src="images/logo.png" alt="Royal Bite">
-
+<header class='quote-header'>
+    <div class='container'>
+        <a href='index.html' class='quote-logo'>
+            <img src='images/logo.png' alt='Royal Bite'>
         </a>
 
-        <!--========== Navigation ==========-->
+        <div class='quote-header-actions'>
+            <button class='theme-toggle' id='theme-toggle'>
+                <i class='fa-solid fa-moon'></i>
+            </button>
 
-        <nav class="navbar" id="navbar">
-
-            <ul class="nav-menu">
-
-                <li class="dropdown">
-
-                    <a href="#" class="nav-link">
-                        Home
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-
-                    <ul class="dropdown-menu">
-
-                        <li><a href="index.html">Home 1</a></li>
-
-                        <li><a href="home2.html">Home 2</a></li>
-
-                    </ul>
-
-                </li>
-
-                <li>
-                    <a href="about.html" class="nav-link">
-                        About Us
-                    </a>
-                </li>
-
-                <li>
-                    <a href="services.html" class="nav-link">
-                        Services
-                    </a>
-                </li>
-
-                <li>
-                    <a href="offerings.html" class="nav-link">
-                        Our Offerings
-                    </a>
-                </li>
-
-                <li>
-                    <a href="gallery.html" class="nav-link">
-                        Gallery
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html" class="nav-link">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-            <!-- Mobile Buttons -->
-
-            <div class="mobile-btn">
-
-                <a href="login.html" class="login-btn">
-                    Login
-                </a>
-
-                <a href="quote.html" class="quote-btn">
-                    Get a Quote
-                </a>
-                <button class="theme-toggle">
-                    <i class="fa-solid fa-moon"></i>
-                    <span>Dark Mode</span>
-                </button>
-                <button class="rtl-toggle">
-                    <i class="fa-solid fa-right-left"></i>
-                    <span>RTL / LTR</span>
-                </button>
-
-            </div>
-
-        </nav>
-
-        <!-- Desktop Buttons -->
-         <div class="desktop-btn">
-
-    <button class="theme-toggle" id="theme-toggle">
-        <i class="fa-solid fa-moon"></i>
-    </button>
-
-    <button class="rtl-toggle" id="rtl-toggle">
-        <i class="fa-solid fa-right-left"></i>
-    </button>
-
-    <a href="login.html" class="login-btn">Login</a>
-
-    <a href="quote.html" class="quote-btn">Get a Quote</a>
-
-</div>
-
-        <!-- Hamburger -->
-
-        <div class="menu-toggle" id="menu-toggle">
-
-            <i class="fa-solid fa-bars"></i>
-
+            <button class='rtl-toggle' id='rtl-toggle'>
+                <i class='fa-solid fa-right-left'></i>
+            </button>
         </div>
-
     </div>
-
 </header>
 
+        
+
+    
+
 <!--==================== HEADER END ====================-->
-<!--=========================================
-            GET A QUOTE BANNER
-==========================================-->
+<section class='quote-page'>
+  <div class='quote-card'>
 
-<section class="page-banner quote-banner">
-
-<div class="banner-overlay"></div>
-
-<div class="container">
-
-    <div class="banner-content">
-
-        <span class="banner-subtitle">Personalized Catering Quote</span>
-
-        <h1>Get a Quote</h1>
-
-        <p>
-            Tell us about your event and catering requirements, and our team will
-            prepare a customized quote tailored to your guest count, menu
-            preferences, and service style.
-        </p>
-
-        <div class="banner-breadcrumb">
-
-            <a href="index.html">Home</a>
-
-            <span>/</span>
-
-            <span>Get a Quote</span>
-
-        </div>
-
+    <div class='quote-top'>
+      
+      <div>
+        <h2>Request Your Quote</h2>
+        <p>Luxury catering for weddings, corporate events, birthdays, and private celebrations.</p>
+      </div>
     </div>
 
-</div>
+    <form class='quote-form-modern'>
 
+      <div class='input-row'>
+        <div class='input-group'>
+          <label>Full Name</label>
+          <input type='text' placeholder='Your full name'>
+        </div>
+
+        <div class='input-group'>
+          <label>Phone Number</label>
+          <input type='tel' placeholder='+91 98765 43210'>
+        </div>
+      </div>
+
+      <div class='input-row'>
+        <div class='input-group'>
+          <label>Email Address</label>
+          <input type='email' placeholder='you@example.com'>
+        </div>
+
+        <div class='input-group'>
+          <label>Event Type</label>
+          <select>
+            <option>Wedding</option>
+            <option>Corporate Event</option>
+            <option>Birthday Party</option>
+            <option>Private Event</option>
+          </select>
+        </div>
+      </div>
+
+      <div class='input-row'>
+        <div class='input-group'>
+          <label>Event Date</label>
+          <input type='date'>
+        </div>
+
+        <div class='input-group'>
+          <label>Guest Count</label>
+          <select>
+            <option>25-50 Guests</option>
+            <option>50-100 Guests</option>
+            <option>100-250 Guests</option>
+            <option>250+ Guests</option>
+          </select>
+        </div>
+      </div>
+
+      <div class='input-group'>
+        <label>Event Location</label>
+        <input type='text' placeholder='Venue or event location'>
+      </div>
+
+      <div class='input-group'>
+        <label>Tell Us About Your Event</label>
+        <textarea rows='5' placeholder='Menu preferences, service style, special requests, and other details'></textarea>
+      </div>
+
+      <button class='quote-btn-modern'>Get My Personalized Quote</button>
+
+    </form>
+  </div>
 </section>
-<!--=========================================
-            QUOTE REQUEST FORM
-==========================================-->
-
-<section class="quote-form-section">
-
-<div class="container">
-
-    <div class="quote-wrapper">
-
-        <!-- Left Content -->
-
-        <div class="quote-info">
-
-            <span class="section-subtitle">Request a Personalized Quote</span>
-
-            <h2>Tell Us About Your Event</h2>
-
-            <p>
-                Whether you are planning a wedding, birthday celebration,
-                corporate gathering, or private event, we will create a
-                customized catering proposal based on your guest count,
-                menu preferences, venue, and service requirements.
-            </p>
-
-            <div class="quote-features">
-
-                <div class="quote-feature">
-
-                    <i class="fas fa-check-circle"></i>
-
-                    <span>Customized menu planning</span>
-
-                </div>
-
-                <div class="quote-feature">
-
-                    <i class="fas fa-check-circle"></i>
-
-                    <span>Transparent pricing with no hidden charges</span>
-
-                </div>
-
-                <div class="quote-feature">
-
-                    <i class="fas fa-check-circle"></i>
-
-                    <span>Professional catering and event service team</span>
-
-                </div>
-
-                <div class="quote-feature">
-
-                    <i class="fas fa-check-circle"></i>
-
-                    <span>Response within 24 hours</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Right Form -->
-
-        <div class="quote-form-box">
-
-            <form class="quote-form" action="#">
-
-                <div class="form-grid">
-
-                    <div class="form-group">
-
-                        <label>Full Name</label>
-
-                        <input type="text" placeholder="Enter your full name" required>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label>Email Address</label>
-
-                        <input type="email" placeholder="Enter your email" required>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label>Phone Number</label>
-
-                        <input type="tel" placeholder="Enter your phone number" required>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label>Event Type</label>
-
-                        <select required>
-
-                            <option value="">Select Event Type</option>
-
-                            <option>Wedding Catering</option>
-
-                            <option>Birthday Party</option>
-
-                            <option>Corporate Event</option>
-
-                            <option>Private Dining</option>
-
-                            <option>Festival & Religious Event</option>
-
-                            <option>Other</option>
-
-                        </select>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label>Event Date</label>
-
-                        <input type="date" required>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label>Guest Count</label>
-
-                        <select required>
-
-                            <option value="">Select Guest Count</option>
-
-                            <option>25-50 Guests</option>
-
-                            <option>50-100 Guests</option>
-
-                            <option>100-200 Guests</option>
-
-                            <option>200-500 Guests</option>
-
-                            <option>500+ Guests</option>
-
-                        </select>
-
-                    </div>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Event Location / Venue</label>
-
-                    <input type="text" placeholder="Enter venue or event location" required>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Additional Requirements</label>
-
-                    <textarea rows="6" placeholder="Tell us about your menu preferences, service style, dietary requirements, or any special requests"></textarea>
-
-                </div>
-
-                <button type="submit" class="quote-submit-btn">
-
-                    Request My Quote
-
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--==================== FOOTER START ====================-->
-
-<footer class="footer">
-
-    <div class="container">
-
-        <div class="footer-content">
-
-            <!--========== Company Info ==========-->
-
-            <div class="footer-box">
-
-                <a href="index.html" class="footer-logo">
-                    <img src="images/logo.png" alt="Royal Bite">
-                </a>
-
-                <p>
-                    Creating unforgettable dining experiences with exceptional
-                    catering services for weddings, corporate events, birthdays,
-                    and every special celebration.
-                </p>
-
-                <div class="footer-social">
-
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-
-                </div>
-
-            </div>
-
-            <!--========== Quick Links ==========-->
-
-            <div class="footer-box">
-
-                <h3>Quick Links</h3>
-
-                <ul>
-
-                    <li><a href="index.html">Home</a></li>
-
-                    <li><a href="about.html">About Us</a></li>
-
-                    <li><a href="services.html">Services</a></li>
-
-                    <li><a href="offerings.html">Our Offerings</a></li>
-
-                    <li><a href="gallery.html">Gallery</a></li>
-
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-
-            </div>
-
-            <!--========== Services ==========-->
-
-            <div class="footer-box">
-
-                <h3>Services</h3>
-
-                <ul>
-
-                    <li><a href="#">Wedding Catering</a></li>
-
-                    <li><a href="#">Birthday Parties</a></li>
-
-                    <li><a href="#">Corporate Events</a></li>
-
-                    <li><a href="#">Outdoor Catering</a></li>
-
-                    <li><a href="#">Live Food Stations</a></li>
-
-                </ul>
-
-            </div>
-
-            <!--========== Contact ==========-->
-
-            <div class="footer-box">
-
-                <h3>Contact Us</h3>
-
-                <ul class="contact-info">
-
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Madurai, Tamil Nadu, India
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        +91 98765 43210
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        info@royalbite.com
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-clock"></i>
-                        Mon - Sun : 9:00 AM - 10:00 PM
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <!--========== Newsletter ==========-->
-
-            <div class="footer-box">
-
-                <h3>Newsletter</h3>
-
-                <p>
-                    Subscribe to receive updates, special offers,
-                    and catering tips.
-                </p>
-
-                <form class="newsletter">
-
-                    <input type="email"
-                        placeholder="Enter your email"
-                        required>
-
-                    <button type="submit">
-                        Subscribe
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!--========== Footer Bottom ==========-->
-
-    <div class="footer-bottom">
-
-        <div class="container">
-
-            <p>
-                © 2026 Royal Bite. All Rights Reserved.
-            </p>
-
-            <div class="footer-links">
-
-                <a href="#">Privacy Policy</a>
-
-                <a href="#">Terms & Conditions</a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</footer>
-
-<!--==================== FOOTER END ====================-->
-
 
 
 <!-- Scroll To Top -->
