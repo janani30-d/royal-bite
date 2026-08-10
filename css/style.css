@@ -365,7 +365,7 @@ img{
 
     transition:.3s;
 
-    height:44px;
+    height:50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -386,7 +386,7 @@ img{
     align-items:center;
     justify-content:center;
     min-width:140px;
-    height:44px;
+    height:50px;
     padding:0 28px;
     background:var(--primary-color);
     color:#fff;
@@ -9594,27 +9594,7 @@ img{
     HOVER BUTTON EFFECT
 ======================================*/
 
-.food-category-card::after{
 
-    content:"Explore Menu";
-
-    position:absolute;
-
-    left:50%;
-
-    bottom:-50px;
-
-    transform:translateX(-50%);
-
-    color:var(--primary-color);
-
-    font-size:15px;
-
-    font-weight:600;
-
-    transition:.4s;
-
-}
 
 .food-category-card:hover::after{
 
@@ -13486,7 +13466,15 @@ html[dir='rtl'] .quote-header .container {
     color:#1F2937;
     margin-bottom:8px;
 }
-
+.quote-top h2::after{
+    content:'';
+    display:block;
+    width:80px;
+    height:3px;
+    background:#D4AF37;
+    margin-top:14px;
+    border-radius:2px;
+}
 .quote-top p{
     color:#64748B;
     line-height:1.7;
@@ -13510,9 +13498,10 @@ html[dir='rtl'] .quote-header .container {
 }
 
 .input-group label{
-    font-weight:600;
+    font-weight:800;
     color:#334155;
     margin-bottom:10px;
+    font-size: 20px;
 }
 
 .input-group input,
@@ -14538,7 +14527,7 @@ body.dark-mode .combo-price{
 }
 
 body.dark-mode .latest-combo-footer{
-    border-top:1px solid rgba(255,255,255,.08);
+    border-top:0px solid rgba(255,255,255,.08);
 }
 
 body.dark-mode .latest-combo-btn{
