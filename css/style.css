@@ -787,6 +787,8 @@ img{
 
     z-index:5;
 
+    
+
 }
 
 .hero-subtitle{
@@ -806,6 +808,8 @@ img{
     margin-bottom:20px;
 
     backdrop-filter:blur(5px);
+
+    
 
 }
 
@@ -15877,4 +15881,453 @@ body.dark-mode input[type="date"]::-webkit-calendar-picker-indicator{
 /* Firefox */
 body.dark-mode input[type="date"]{
     color-scheme: dark;
+}
+
+
+
+
+
+
+
+/* =====================================
+   GLOBAL FONT SIZE REDUCTION - FINAL
+   ===================================== */
+
+/* Main headings */
+h1,
+h2,
+h3,
+h4 {
+    font-size: 48px !important;
+}
+
+h2 {
+    font-size: 40px !important;
+}
+
+h3 {
+    font-size: 24px !important;
+}
+
+h4 {
+    font-size: 20px !important;
+}
+
+
+/* Paragraphs */
+p {
+    font-size: 15px !important;
+    line-height: 1.8;
+}
+
+
+/* Section headings */
+.section-title h2 {
+    font-size: 40px !important;
+}
+
+.section-title p {
+    font-size: 15px !important;
+}
+
+.section-title span {
+    font-size: 15px !important;
+}
+
+
+/* Hero */
+.hero-content h1 {
+    font-size: 58px !important;
+}
+
+.hero-content p {
+    font-size: 16px !important;
+}
+
+
+/* About */
+.about-content h2 {
+    font-size: 40px !important;
+}
+
+.about-content p {
+    font-size: 15px !important;
+}
+
+
+/* Home 2 */
+.hero-two-content h1 {
+    font-size: 54px !important;
+}
+
+.hero-two-content p {
+    font-size: 16px !important;
+}
+
+.about-two-content h2 {
+    font-size: 40px !important;
+}
+
+.about-two-content p {
+    font-size: 15px !important;
+}
+
+
+/* CTA */
+.cta-content h2 {
+    font-size: 46px !important;
+}
+
+.cta-content p {
+    font-size: 16px !important;
+}
+
+
+/* Cards */
+.home-service-content h3,
+.why-card h3,
+.home-package-card h3,
+.menu-content h3 {
+    font-size: 24px !important;
+}
+
+.home-service-content p,
+.why-card p,
+.menu-content p {
+    font-size: 15px !important;
+}
+
+
+/* FAQ */
+.faq-question span {
+    font-size: 17px !important;
+}
+
+.faq-answer p {
+    font-size: 15px !important;
+}
+
+
+/* Footer */
+.footer-box h3 {
+    font-size: 22px !important;
+}
+
+.footer-box p,
+.footer-box ul li a,
+.contact-info li {
+    font-size: 14px !important;
+}
+
+
+
+
+
+
+
+/* =========================================
+   OUR JOURNEY - YEAR / LINE ALIGNMENT FIX
+========================================= */
+
+.journey-timeline {
+    position: relative;
+}
+
+/* Vertical line */
+.journey-timeline::before {
+    left: 30px !important;
+}
+
+/* Year circle */
+.journey-year {
+    left: -5px !important;
+    width: 70px;
+    height: 70px;
+    z-index: 3;
+}
+
+/* Keep content position unchanged */
+.journey-item {
+    padding-left: 60px;
+}
+
+
+
+
+/*================================================
+   BUG 3 FIX
+   HERO TEXT CENTERING
+   Home 1 + Our Offerings + Gallery + Contact
+================================================*/
+
+/* ---------- HOME 1 HERO ---------- */
+
+.hero-content {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-content h1,
+.hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-btn {
+    justify-content: center;
+}
+
+
+/* ---------- OUR OFFERINGS ---------- */
+
+.shop-banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.shop-banner-content h1,
+.shop-banner-content p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop-banner-content .shop-tag {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop-breadcrumb {
+    justify-content: center;
+}
+
+
+/* ---------- GALLERY ---------- */
+
+.gallery-banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery-banner-content h1,
+.gallery-banner-content p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-breadcrumb {
+    justify-content: center;
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.contact-banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-banner-content h1,
+.contact-banner-content p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-breadcrumb {
+    justify-content: center;
+}
+
+
+
+
+/* =====================================
+   HOME 1 - SIGNATURE SERVICES
+   ALIGN LEARN MORE LINKS
+===================================== */
+
+.home-services-grid {
+    align-items: stretch;
+}
+
+.home-service-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.home-service-card p {
+    flex: 1;
+}
+
+.home-service-card a {
+    margin-top: auto;
+}
+
+
+/* =====================================
+   HOME 1 - EVENT PACKAGES
+   COMPLETE CENTER ALIGNMENT
+===================================== */
+
+.home-packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: stretch;
+}
+
+/* Card */
+.home-package-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Icon */
+.home-package-icon {
+    margin: 0 auto 20px;
+}
+
+/* Heading */
+.home-package-card h3 {
+    width: 100%;
+    text-align: center;
+}
+
+/* Points container */
+.home-package-card ul {
+    width: 100%;
+    margin: 0 auto 25px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+/* Individual points */
+.home-package-card ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    text-align: center;
+}
+
+/* Check icon */
+.home-package-card ul li i {
+    flex-shrink: 0;
+}
+
+/* CTA */
+.home-package-card a,
+.home-package-card .package-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Most Popular card */
+.home-package-card.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Most Popular badge */
+.home-package-card.featured .home-package-badge {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+}
+
+/* Featured icon */
+.home-package-card.featured .home-package-icon {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* =====================================
+   MOST POPULAR BADGE - SPACING FIX
+===================================== */
+
+.home-package-card.featured .home-package-badge {
+    top: 15px;
+}
+
+.home-package-card.featured .home-package-icon {
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+/* =====================================
+   ABOUT PAGE HERO - REMOVE BREADCRUMB CTA
+===================================== */
+
+.page-banner .breadcrumb {
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    backdrop-filter: none;
+}
+
+.page-banner .breadcrumb .active {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+body.dark-mode .gallery-moment-content span {
+    color: #ffffff !important;
+    background: rgba(0, 0, 0, 0.70) !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+
+body.dark-mode .logo img,
+body.dark-mode .footer-logo img {
+    filter: brightness(1.7) contrast(1.3) saturate(1.2)
+            drop-shadow(0 0 3px rgba(255, 215, 100, 0.35));
+}
+
+
+
+
+.theme-toggle {
+position: relative;
+z-index: 10;
+cursor: pointer;
+pointer-events: auto;
+}
+
+.theme-toggle i {
+pointer-events: none;
+}
+
+
+
+.page-banner .breadcrumb .active {
+    color: #D4AF37 !important;
 }

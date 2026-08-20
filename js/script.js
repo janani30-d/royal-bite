@@ -652,44 +652,65 @@ if (scrollTopBtn) {
 
 
 
-/***darkmode**** */
-//=====================================
+/***theme mode**** */
+// ========================================
 // GLOBAL DARK MODE
-//=====================================
+// ========================================
 
-const themeButtons = document.querySelectorAll(".theme-toggle");
+document.addEventListener("DOMContentLoaded", function () {
 
-// Load saved theme
-if(localStorage.getItem("theme") === "dark"){
-    document.body.classList.add("dark-mode");
-    themeButtons.forEach(btn => {
-        const icon = btn.querySelector("i");
-        if(icon){
-            icon.classList.remove("fa-moon");
-            icon.classList.add("fa-sun");
-        }
-    });
-}
+    const themeButtons = document.querySelectorAll(".theme-toggle");
 
-// Toggle theme
-themeButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
+    // Load saved theme
+    const savedTheme = localStorage.getItem("theme");
 
-        document.body.classList.toggle("dark-mode");
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+    } else {
+        document.body.classList.remove("dark-mode");
+    }
+
+    // Update icons
+    function updateThemeIcons() {
 
         const isDark = document.body.classList.contains("dark-mode");
 
-        localStorage.setItem("theme", isDark ? "dark" : "light");
-
         themeButtons.forEach(button => {
+
             const icon = button.querySelector("i");
-            if(icon){
-                icon.classList.toggle("fa-moon", !isDark);
-                icon.classList.toggle("fa-sun", isDark);
-            }
+
+            if (!icon) return;
+
+            icon.classList.remove("fa-moon", "fa-sun");
+
+            icon.classList.add(
+                isDark ? "fa-sun" : "fa-moon"
+            );
+
+        });
+    }
+
+    updateThemeIcons();
+
+    // Toggle dark mode
+    themeButtons.forEach(button => {
+
+        button.addEventListener("click", function () {
+
+            const isDark =
+                document.body.classList.toggle("dark-mode");
+
+            localStorage.setItem(
+                "theme",
+                isDark ? "dark" : "light"
+            );
+
+            updateThemeIcons();
+
         });
 
     });
+
 });
 
 /*=====================================

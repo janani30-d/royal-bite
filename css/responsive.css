@@ -14353,3 +14353,1043 @@ html[dir='rtl'] .input-group textarea{
     }
 }
 
+
+
+
+
+
+
+
+/* =====================================================
+   OUR JOURNEY - COMPLETE RESPONSIVE + RTL FIX
+===================================================== */
+
+
+/* =====================================================
+   DEFAULT / DESKTOP - LTR
+===================================================== */
+
+.journey-timeline {
+    position: relative;
+    padding-left: 60px;
+}
+
+.journey-timeline::before {
+    left: 30px !important;
+    right: auto;
+}
+
+.journey-item {
+    position: relative;
+    padding-left: 60px;
+}
+
+.journey-year {
+    left: -5px !important;
+    right: auto;
+    width: 70px;
+    height: 70px;
+    z-index: 3;
+}
+
+.journey-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   iPAD PRO - 1024px
+===================================================== */
+
+@media (max-width: 1024px) {
+
+    .journey-timeline {
+        max-width: 900px;
+        padding-left: 55px;
+    }
+
+    .journey-timeline::before {
+        left: 27px !important;
+    }
+
+    .journey-item {
+        padding-left: 55px;
+    }
+
+    .journey-year {
+        left: -5px !important;
+        width: 65px;
+        height: 65px;
+        font-size: 17px;
+    }
+
+    .journey-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+
+/* =====================================================
+   iPAD MINI - 768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .journey-timeline {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+
+    .journey-timeline::before {
+        left: 25px !important;
+        width: 3px;
+    }
+
+    .journey-item {
+        padding-left: 50px;
+        margin-bottom: 40px;
+    }
+
+    .journey-year {
+        left: -5px !important;
+        width: 60px;
+        height: 60px;
+        border-width: 4px;
+        font-size: 16px;
+    }
+
+    .journey-content {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .journey-content h3 {
+        font-size: 24px;
+    }
+
+    .journey-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE - 576px
+===================================================== */
+
+@media (max-width: 576px) {
+
+    .journey-timeline {
+        width: 100%;
+        padding-left: 42px;
+        margin-top: 45px;
+    }
+
+    .journey-timeline::before {
+        left: 21px !important;
+        width: 3px;
+    }
+
+    .journey-item {
+        padding-left: 42px;
+        margin-bottom: 35px;
+    }
+
+    .journey-year {
+        left: -5px !important;
+        width: 52px;
+        height: 52px;
+        border-width: 3px;
+        font-size: 14px;
+    }
+
+    .journey-content {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 25px 20px;
+        border-radius: 16px;
+    }
+
+    .journey-content h3 {
+        font-size: 21px;
+        line-height: 1.3;
+    }
+
+    .journey-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE - 360px
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .journey-timeline {
+        padding-left: 38px;
+    }
+
+    .journey-timeline::before {
+        left: 19px !important;
+    }
+
+    .journey-item {
+        padding-left: 38px;
+        margin-bottom: 30px;
+    }
+
+    .journey-year {
+        left: -5px !important;
+        width: 48px;
+        height: 48px;
+        font-size: 13px;
+    }
+
+    .journey-content {
+        padding: 22px 16px;
+    }
+
+    .journey-content h3 {
+        font-size: 19px;
+    }
+
+    .journey-content p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =====================================================
+   RTL - DESKTOP
+===================================================== */
+
+html[dir="rtl"] .journey-timeline {
+    padding-left: 0;
+    padding-right: 60px;
+}
+
+html[dir="rtl"] .journey-timeline::before {
+    left: auto !important;
+    right: 30px !important;
+}
+
+html[dir="rtl"] .journey-item {
+    padding-left: 0;
+    padding-right: 60px;
+}
+
+html[dir="rtl"] .journey-year {
+    left: auto !important;
+    right: -5px !important;
+}
+
+html[dir="rtl"] .journey-content {
+    text-align: right;
+}
+
+
+/* =====================================================
+   RTL - iPAD PRO
+===================================================== */
+
+@media (max-width: 1024px) {
+
+    html[dir="rtl"] .journey-timeline {
+        padding-left: 0;
+        padding-right: 55px;
+    }
+
+    html[dir="rtl"] .journey-timeline::before {
+        left: auto !important;
+        right: 27px !important;
+    }
+
+    html[dir="rtl"] .journey-item {
+        padding-left: 0;
+        padding-right: 55px;
+    }
+
+    html[dir="rtl"] .journey-year {
+        left: auto !important;
+        right: -5px !important;
+    }
+
+}
+
+
+/* =====================================================
+   RTL - iPAD MINI
+===================================================== */
+
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .journey-timeline {
+        padding-left: 0;
+        padding-right: 50px;
+    }
+
+    html[dir="rtl"] .journey-timeline::before {
+        left: auto !important;
+        right: 25px !important;
+    }
+
+    html[dir="rtl"] .journey-item {
+        padding-left: 0;
+        padding-right: 50px;
+    }
+
+    html[dir="rtl"] .journey-year {
+        left: auto !important;
+        right: -5px !important;
+    }
+
+}
+
+
+/* =====================================================
+   RTL - MOBILE
+===================================================== */
+
+@media (max-width: 576px) {
+
+    html[dir="rtl"] .journey-timeline {
+        padding-left: 0;
+        padding-right: 42px;
+    }
+
+    html[dir="rtl"] .journey-timeline::before {
+        left: auto !important;
+        right: 21px !important;
+    }
+
+    html[dir="rtl"] .journey-item {
+        padding-left: 0;
+        padding-right: 42px;
+    }
+
+    html[dir="rtl"] .journey-year {
+        left: auto !important;
+        right: -5px !important;
+    }
+
+    html[dir="rtl"] .journey-content {
+        text-align: right;
+    }
+
+}
+
+
+/* =====================================================
+   RTL - SMALL MOBILE 360px
+===================================================== */
+
+@media (max-width: 380px) {
+
+    html[dir="rtl"] .journey-timeline {
+        padding-left: 0;
+        padding-right: 38px;
+    }
+
+    html[dir="rtl"] .journey-timeline::before {
+        left: auto !important;
+        right: 19px !important;
+    }
+
+    html[dir="rtl"] .journey-item {
+        padding-left: 0;
+        padding-right: 38px;
+    }
+
+    html[dir="rtl"] .journey-year {
+        left: auto !important;
+        right: -5px !important;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================================
+   OUR JOURNEY - FINAL LTR + RTL + RESPONSIVE
+========================================================= */
+
+/* =========================
+   LTR - DEFAULT
+========================= */
+
+.journey-timeline {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 70px auto 0;
+    padding-left: 60px;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+
+.journey-timeline::before {
+    left: 30px !important;
+    right: auto !important;
+}
+
+.journey-item {
+    position: relative;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+
+.journey-year {
+    position: absolute !important;
+    left: -5px !important;
+    right: auto !important;
+    width: 70px;
+    height: 70px;
+    z-index: 5;
+}
+
+.journey-content {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   RTL - DESKTOP
+========================================================= */
+
+html[dir="rtl"] .journey-timeline {
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+
+    box-sizing: border-box;
+}
+
+/* Timeline line */
+html[dir="rtl"] .journey-timeline::before {
+    left: auto !important;
+    right: 30px !important;
+}
+
+/* Timeline item */
+html[dir="rtl"] .journey-item {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 60px !important;
+
+    box-sizing: border-box;
+}
+
+/* Year circle */
+html[dir="rtl"] .journey-year {
+    position: absolute !important;
+
+    left: auto !important;
+    right: -5px !important;
+
+    width: 70px;
+    height: 70px;
+
+    z-index: 5;
+}
+
+/* Content card */
+html[dir="rtl"] .journey-content {
+    width: 100%;
+    max-width: 100%;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    box-sizing: border-box;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   iPAD PRO - 1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .journey-timeline {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 55px;
+    }
+
+    .journey-timeline::before {
+        left: 27px !important;
+    }
+
+    .journey-item {
+        padding-left: 55px;
+    }
+
+    .journey-year {
+        left: -5px !important;
+        width: 65px;
+        height: 65px;
+    }
+
+
+    /* RTL */
+
+    html[dir="rtl"] .journey-timeline {
+        width: 100%;
+        max-width: 100%;
+
+        padding-left: 55px !important;
+        padding-right: 55px !important;
+    }
+
+    html[dir="rtl"] .journey-timeline::before {
+        left: auto !important;
+        right: 27px !important;
+    }
+
+    html[dir="rtl"] .journey-item {
+        padding-left: 0 !important;
+        padding-right: 55px !important;
+    }
+
+    html[dir="rtl"] .journey-year {
+        left: auto !important;
+        right: -5px !important;
+
+        width: 65px;
+        height: 65px;
+    }
+
+    html[dir="rtl"] .journey-content {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================================
+   iPAD MINI - 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .journey-timeline {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+        margin-top: 50px;
+    }
+
+    .journey-timeline::before {
+        left: 25px !important;
+        width: 3px;
+    }
+
+    .journey-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .journey-year {
+        left: -5px !important;
+        width: 60px;
+        height: 60px;
+        border-width: 4px;
+        font-size: 16px;
+    }
+
+    .journey-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+
+    /* RTL */
+
+    html[dir="rtl"] .journey-timeline {
+        width: 100%;
+        max-width: 100%;
+
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+
+        overflow: visible;
+    }
+
+    html[dir="rtl"] .journey-timeline::before {
+        left: auto !important;
+        right: 25px !important;
+        width: 3px;
+    }
+
+    html[dir="rtl"] .journey-item {
+        width: 100%;
+
+        padding-left: 0 !important;
+        padding-right: 50px !important;
+
+        box-sizing: border-box;
+    }
+
+    html[dir="rtl"] .journey-year {
+        left: auto !important;
+        right: -5px !important;
+
+        width: 60px;
+        height: 60px;
+        border-width: 4px;
+        font-size: 16px;
+    }
+
+    html[dir="rtl"] .journey-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        margin: 0 !important;
+        text-align: right;
+        box-sizing: border-box;
+    }
+}
+
+
+/* =========================================================
+   MOBILE - 576px
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .journey-timeline {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 42px;
+        padding-right: 0;
+        margin-top: 45px;
+    }
+
+    .journey-timeline::before {
+        left: 21px !important;
+        width: 3px;
+    }
+
+    .journey-item {
+        width: 100%;
+        padding-left: 42px;
+        padding-right: 0;
+        margin-bottom: 35px;
+    }
+
+    .journey-year {
+        left: -5px !important;
+        width: 52px;
+        height: 52px;
+        border-width: 3px;
+        font-size: 14px;
+    }
+
+    .journey-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 22px 18px;
+        box-sizing: border-box;
+    }
+
+    .journey-content h3 {
+        font-size: 21px;
+        line-height: 1.3;
+    }
+
+    .journey-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* RTL */
+
+    html[dir="rtl"] .journey-timeline {
+        width: 100%;
+        max-width: 100%;
+
+        padding-left: 42px !important;
+        padding-right: 42px !important;
+
+        overflow: visible;
+    }
+
+    html[dir="rtl"] .journey-timeline::before {
+        left: auto !important;
+        right: 21px !important;
+        width: 3px;
+    }
+
+    html[dir="rtl"] .journey-item {
+        width: 100%;
+
+        padding-left: 0 !important;
+        padding-right: 42px !important;
+
+        margin-bottom: 35px;
+    }
+
+    html[dir="rtl"] .journey-year {
+        left: auto !important;
+        right: -5px !important;
+
+        width: 52px;
+        height: 52px;
+        border-width: 3px;
+        font-size: 14px;
+    }
+
+    html[dir="rtl"] .journey-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        padding: 22px 18px;
+
+        margin: 0 !important;
+
+        text-align: right;
+        box-sizing: border-box;
+    }
+
+    html[dir="rtl"] .journey-content h3 {
+        font-size: 21px;
+        line-height: 1.3;
+    }
+
+    html[dir="rtl"] .journey-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE - 360px
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .journey-timeline {
+        padding-left: 38px;
+    }
+
+    .journey-timeline::before {
+        left: 19px !important;
+    }
+
+    .journey-item {
+        padding-left: 38px;
+    }
+
+    .journey-year {
+        left: -5px !important;
+        width: 48px;
+        height: 48px;
+        font-size: 13px;
+    }
+
+    .journey-content {
+        padding: 20px 15px;
+    }
+
+    .journey-content h3 {
+        font-size: 19px;
+    }
+
+    .journey-content p {
+        font-size: 13px;
+    }
+
+
+    /* RTL */
+
+    html[dir="rtl"] .journey-timeline {
+        padding-left: 38px !important;
+        padding-right: 38px !important;
+    }
+
+    html[dir="rtl"] .journey-timeline::before {
+        left: auto !important;
+        right: 19px !important;
+    }
+
+    html[dir="rtl"] .journey-item {
+        padding-left: 0 !important;
+        padding-right: 38px !important;
+    }
+
+    html[dir="rtl"] .journey-year {
+        left: auto !important;
+        right: -5px !important;
+
+        width: 48px;
+        height: 48px;
+        font-size: 13px;
+    }
+
+    html[dir="rtl"] .journey-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 15px;
+
+        box-sizing: border-box;
+    }
+
+    html[dir="rtl"] .journey-content h3 {
+        font-size: 19px;
+    }
+
+    html[dir="rtl"] .journey-content p {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+/*=====================================
+    HOME 2 HERO - 360px CTA FIX
+======================================*/
+
+@media (min-width:321px) and (max-width:375px){
+
+    .hero-two-subtitle{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+
+        padding:8px 16px;
+
+        max-width:calc(100% - 30px);
+        box-sizing:border-box;
+
+        margin:0 auto 20px;
+
+        white-space:nowrap;
+    }
+
+}
+
+
+/*=====================================
+    HOME 2 - 360px FINAL HERO FIX
+======================================*/
+
+@media (max-width:375px){
+
+    .hero-two{
+        width:100%;
+        overflow:hidden;
+        padding:70px 0 50px;
+    }
+
+    .hero-two .container{
+        width:100%;
+        max-width:100%;
+        padding-left:15px;
+        padding-right:15px;
+        box-sizing:border-box;
+    }
+
+    .hero-two-content{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        text-align:center;
+        overflow:hidden;
+    }
+
+    /* Top CTA */
+    .hero-two-subtitle{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+
+        width:auto;
+        max-width:calc(100% - 20px);
+
+        padding:8px 16px;
+        margin:0 auto 20px;
+
+        box-sizing:border-box;
+        white-space:nowrap;
+    }
+
+    /* Main heading */
+    .hero-two-content h1{
+        width:100%;
+        max-width:100%;
+
+        font-size:30px !important;
+        line-height:1.25;
+
+        margin:0 auto 20px;
+
+        overflow-wrap:break-word;
+        word-break:normal;
+    }
+
+    /* Paragraph */
+    .hero-two-content p{
+        width:100%;
+        max-width:100%;
+
+        padding:0 5px;
+        margin:0 auto 30px;
+
+        box-sizing:border-box;
+
+        font-size:15px;
+        line-height:1.8;
+
+        overflow-wrap:break-word;
+    }
+
+    /* Hero buttons */
+    .hero-two-buttons{
+        width:100%;
+        max-width:100%;
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+
+        box-sizing:border-box;
+    }
+
+    .hero-two-buttons .primary-btn,
+    .hero-two-buttons .secondary-btn{
+        width:100%;
+        max-width:320px;
+        box-sizing:border-box;
+        margin:0;
+    }
+}
+
+
+
+@media (max-width:375px){
+
+    .hero-two-subtitle{
+        margin-top:15px;
+        margin-bottom:20px;
+    }
+
+}
+
+
+
+
+
+/* =====================================
+   BUG 6 - HOME 2 CTA
+   DARK MODE - 360px FIX
+===================================== */
+
+@media (max-width: 375px){
+
+    body.dark-mode .cta-section{
+        width:100%;
+        overflow:hidden;
+        box-sizing:border-box;
+    }
+
+    body.dark-mode .cta-section .container{
+        width:100%;
+        max-width:100%;
+        padding-left:15px;
+        padding-right:15px;
+        box-sizing:border-box;
+    }
+
+    body.dark-mode .cta-section .cta-wrapper{
+        width:100%;
+        max-width:100%;
+        padding:50px 20px;
+        margin:0 auto;
+        box-sizing:border-box;
+        overflow:hidden;
+    }
+
+    body.dark-mode .cta-section .cta-wrapper h2{
+        width:100%;
+        max-width:100%;
+        font-size:30px !important;
+        line-height:1.2 !important;
+        margin-left:auto;
+        margin-right:auto;
+        overflow-wrap:anywhere;
+        word-break:normal;
+        box-sizing:border-box;
+    }
+
+    body.dark-mode .cta-section .cta-wrapper p{
+        width:100%;
+        max-width:100%;
+        font-size:15px !important;
+        line-height:1.7 !important;
+        box-sizing:border-box;
+    }
+
+    body.dark-mode .cta-section .cta-buttons{
+        width:100%;
+        max-width:100%;
+        flex-direction:column;
+        align-items:center;
+        box-sizing:border-box;
+    }
+
+    body.dark-mode .cta-section .cta-buttons a{
+        width:100%;
+        max-width:280px;
+        box-sizing:border-box;
+        text-align:center;
+    }
+
+    body.dark-mode .cta-section .cta-features{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+}
