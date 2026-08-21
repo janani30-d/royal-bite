@@ -15561,3 +15561,182 @@ html[dir="rtl"] .journey-content {
         min-height:50px;
     }
 }
+
+
+
+
+
+/* =========================================================
+   OUR JOURNEY - RTL FIX
+========================================================= */
+
+html[dir="rtl"] .journey-timeline {
+    position: relative !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Vertical line */
+html[dir="rtl"] .journey-timeline::before {
+    left: auto !important;
+    right: 30px !important;
+    width: 4px !important;
+    transform: none !important;
+}
+
+/* Each journey item */
+html[dir="rtl"] .journey-item {
+    position: relative !important;
+    padding-left: 0 !important;
+    padding-right: 90px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Year circle */
+html[dir="rtl"] .journey-year {
+    left: auto !important;
+    right: -5px !important;
+
+    width: 70px !important;
+    height: 70px !important;
+
+    z-index: 10 !important;
+}
+
+/* Content card */
+html[dir="rtl"] .journey-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+    box-sizing: border-box !important;
+
+    text-align: right !important;
+}
+
+
+/* =========================================================
+   RTL - MOBILE / TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    html[dir="rtl"] .journey-timeline {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        overflow: visible !important;
+    }
+
+    /* RTL vertical line */
+    html[dir="rtl"] .journey-timeline::before {
+        left: auto !important;
+        right: 30px !important;
+
+        width: 3px !important;
+        transform: none !important;
+    }
+
+    /* Item */
+    html[dir="rtl"] .journey-item {
+        width: 100% !important;
+
+        padding-left: 0 !important;
+        padding-right: 70px !important;
+
+        box-sizing: border-box !important;
+    }
+
+    /* Circle */
+    html[dir="rtl"] .journey-year {
+        left: auto !important;
+        right: 0 !important;
+
+        width: 60px !important;
+        height: 60px !important;
+
+        z-index: 10 !important;
+    }
+
+    /* Card */
+    html[dir="rtl"] .journey-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 22px 18px !important;
+
+        box-sizing: border-box !important;
+        text-align: right !important;
+    }
+}
+
+
+/* =========================================================
+   RTL - SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    html[dir="rtl"] .journey-timeline {
+        padding: 0 !important;
+    }
+
+    html[dir="rtl"] .journey-timeline::before {
+        right: 25px !important;
+        width: 3px !important;
+    }
+
+    html[dir="rtl"] .journey-item {
+        padding-right: 58px !important;
+        padding-left: 0 !important;
+    }
+
+    html[dir="rtl"] .journey-year {
+        right: 0 !important;
+
+        width: 52px !important;
+        height: 52px !important;
+    }
+
+    html[dir="rtl"] .journey-content {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        padding: 22px 16px !important;
+    }
+}
+
+
+/* =========================================================
+   RTL - VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    html[dir="rtl"] .journey-timeline::before {
+        right: 23px !important;
+    }
+
+    html[dir="rtl"] .journey-item {
+        padding-right: 52px !important;
+    }
+
+    html[dir="rtl"] .journey-year {
+        width: 48px !important;
+        height: 48px !important;
+
+        right: 0 !important;
+        font-size: 13px !important;
+    }
+
+    html[dir="rtl"] .journey-content {
+        padding: 20px 14px !important;
+    }
+}

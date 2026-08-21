@@ -16331,3 +16331,165 @@ pointer-events: none;
 .page-banner .breadcrumb .active {
     color: #D4AF37 !important;
 }
+
+
+
+
+
+/* =========================================
+   OUR JOURNEY - LINE THROUGH CIRCLE CENTER
+========================================= */
+
+.journey-timeline {
+    position: relative;
+}
+
+.journey-timeline::before {
+    left: 90px !important;
+    right: auto !important;
+    transform: none !important;
+}
+
+.journey-year {
+    left: -5px !important;
+    z-index: 10 !important;
+}
+
+.journey-item {
+    padding-left: 60px !important;
+}
+
+
+/* =========================================================
+   OUR JOURNEY - TABLET / DESKTOP LINE ALIGNMENT FIX
+========================================================= */
+
+@media (min-width: 769px) {
+
+    .journey-timeline {
+        position: relative !important;
+        padding-left: 0 !important;
+    }
+
+    .journey-timeline::before {
+        left: 30px !important;
+        right: auto !important;
+        width: 4px !important;
+        transform: none !important;
+    }
+
+    .journey-item {
+        position: relative !important;
+        padding-left: 90px !important;
+    }
+
+    .journey-year {
+        left: -5px !important;
+        width: 70px !important;
+        height: 70px !important;
+        z-index: 10 !important;
+    }
+
+    .journey-content {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+
+/* =========================================================
+   OUR JOURNEY - MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .journey-timeline {
+        position: relative !important;
+        padding-left: 0 !important;
+    }
+
+    .journey-timeline::before {
+        left: 30px !important;
+        right: auto !important;
+        width: 3px !important;
+        transform: none !important;
+    }
+
+    .journey-item {
+        position: relative !important;
+        padding-left: 70px !important;
+    }
+
+    .journey-year {
+        left: -5px !important;
+        width: 60px !important;
+        height: 60px !important;
+        z-index: 10 !important;
+    }
+
+    .journey-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+
+
+
+
+/* =========================================
+   DARK MODE - BREADCRUMB BOX REMOVE
+========================================= */
+
+body.dark-mode .breadcrumb {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+
+/* =========================================
+   DARK MODE - REMOVE BREADCRUMB BOX
+   KEEP BREADCRUMB TEXT
+========================================= */
+
+/* About Us */
+body.dark-mode .breadcrumb,
+body.dark-mode .about-breadcrumb {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+
+/* Services */
+body.dark-mode .services-breadcrumb {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+
+/* Our Offerings */
+body.dark-mode .shop-breadcrumb {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+/* =========================================
+   ABOUT BANNER - DARK MODE SPACING FIX
+========================================= */
+
+body.dark-mode .page-banner .page-banner-content p {
+    margin: 0 auto 30px !important;
+}
+
+body.dark-mode .page-banner .breadcrumb {
+    margin-top: 0 !important;
+}
